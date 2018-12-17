@@ -1,0 +1,42 @@
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-3 center">
+      <label for="inputName">Nombre</label>
+      <input type="text" class="form-control" id="inputName" placeholder="Nombre..." name="tiulo" [(ngModel)]="my_prov.nombre" >
+    </div>
+  </div>
+
+
+  <div class="form-row">
+    <div class="form-group col-md-2 center">
+    <label for="inputImg">Telefono</label>
+    <input type="text" class="form-control" id="inputImg" placeholder="Telefono..." name="inputImg" [(ngModel)]="my_prov.telefono">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-3 center">
+      <label for="inputName">Localidad</label>
+      <input type="text" class="form-control" id="inputName" placeholder="Localidad..." name="tiulo"[(ngModel)]="my_prov.localidad" >
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-3 center">
+      <label for="inputImg">Direccion</label>
+      <input type="text" class="form-control" id="inputImg" placeholder="Direccion..." name="inputImg"[(ngModel)]="my_prov.direccion" >
+    </div>
+  </div>
+
+
+  <div class="form-row">
+    <div class="form-group col-md-3 center">
+      <label for="inputImg">Cuit</label>
+      <input type="text" class="form-control" id="inputImg" placeholder="Cuit..." name="inputImg" [(ngModel)]="my_prov.cuit" >
+    </div>
+  </div>
+
+
+
+  <button type="submit" class="btn btn-primary center" (click)="postProv()">Aceptar</button>
+</form>

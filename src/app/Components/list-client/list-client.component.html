@@ -1,0 +1,23 @@
+<table class="table-success">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">Direccion</th>
+        <th scope="col">Telefono</th>
+        <th scope="col">Cuil</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let cli of _service.clientes'>
+        <th scope="row">{{cli.id}}</th>
+        <td>{{cli.nombre}}</td>
+        <td>{{cli.apellido}}</td>
+        <td>{{cli.direccion}}</td>
+        <td>{{cli.telefono}}</td>
+        <td>{{cli.cuil}}</td>
+        <td><button type="button" class="btn btn-warning" (click)="modif(cli)">Modificar</button></td>
+      </tr>
+    </tbody>
+  </table>

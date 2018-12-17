@@ -1,0 +1,42 @@
+
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-3 center">
+      <label for="inputName">Nombre</label>
+      <input type="text" class="form-control" id="inputName" placeholder="Nombre..." name="tiulo" [(ngModel)]="my_client.nombre">
+    </div>
+
+    <div class="form-group col-md-3 center">
+      <label for="inputName">Apellido</label>
+      <input type="text" class="form-control" id="inputName" placeholder="Apellido..." name="tiulo" [(ngModel)]="my_client.apellido">
+    </div>
+  </div>
+
+
+  <div class="form-row">
+    <div class="form-group col-md-2 center">
+    <label for="inputImg">Telefono</label>
+    <input type="text" class="form-control" id="inputImg" placeholder="Telefono..." name="inputImg" [(ngModel)]="my_client.telefono">
+    </div>
+  </div>
+
+
+  <div class="form-row">
+    <div class="form-group col-md-3 center">
+    <label for="inputImg">Direccion</label>
+    <input type="text" class="form-control" id="inputImg" placeholder="Direccion..." name="inputImg" [(ngModel)]="my_client.direccion">
+    </div>
+  </div>
+
+
+  <div class="form-row">
+    <div class="form-group col-md-3 center">
+    <label for="inputImg">Cuil</label>
+    <input type="text" class="form-control" id="inputImg" placeholder="Cuil..." name="inputImg" [(ngModel)]="my_client.cuil">
+    </div>
+  </div>
+
+
+
+  <button type="submit" class="btn btn-primary center" (click)="postClient()">Aceptar</button>
+</form>

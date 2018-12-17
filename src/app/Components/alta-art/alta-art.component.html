@@ -1,0 +1,58 @@
+
+
+
+
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-3 center">
+      <label for="inputName">Nombre Articulo</label>
+      <input type="text" class="form-control" id="inputName" placeholder="Nombre..." name="tiulo" [(ngModel)]="my_art.nombre" >
+    </div>
+
+    <div class="form-group col-md-1 center">
+      <label for="inputName">Codigo</label>
+      <input type="text" class="form-control" id="inputName" placeholder="Codigo..." name="tiulo " [(ngModel)]="my_art.codigo" >
+    </div>
+  </div>
+
+
+
+  <div class="form-row">
+      <div class="form-group col-md-5 center">
+      <label for="inputImg">Descripcion</label>
+      <input type="text" class="form-control" id="inputImg" placeholder="Rubro..." name="inputImg"[(ngModel)]="my_art.descripcion" >
+      </div>
+    </div>
+
+
+  <div class="form-row">
+    <div class="form-group col-md-4 center">
+    <label for="inputImg">Rubro</label>
+    <input type="text" class="form-control" id="inputImg" placeholder="Rubro..." name="inputImg"[(ngModel)]="my_art.rubro" >
+    </div>
+  </div>
+
+
+
+    <div class="form-row">
+      <div class="form-group col-md-1 center">
+        <label for="inputGen">Precio de Compra</label>
+        <input type="text" class="form-control" id="inputGen" placeholder="$..." name="genero" [(ngModel)]="my_art.precio_de_compra">
+      </div>
+
+      <div class="form-group col-md-1 center">
+        <label for="inputGen">Precio de Venta</label>
+        <input type="text" class="form-control" id="inputGen" placeholder="$..." name="genero"[(ngModel)]="my_art.precio_de_venta_de_lista">
+      </div>
+    </div>
+
+
+    <div class="form-row">
+      <div class="form-group col-md-1 center">
+        <label for="inputGen">Cantidad</label>
+        <input type="text" class="form-control" id="inputGen" placeholder="Cantidad..." name="genero" [(ngModel)]="my_art.cantidad_en_stock">
+      </div>
+    </div>
+
+  <button type="submit" class="btn btn-primary center" (click)="postArt()">Aceptar</button>
+</form>

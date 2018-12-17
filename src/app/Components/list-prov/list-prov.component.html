@@ -1,0 +1,21 @@
+<table class="table-success">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Direccion</th>
+        <th scope="col">Telefono</th>
+        <th scope="col">Cuit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let prov of _service.proveedores'>
+        <th scope="row">{{prov.id}}</th>
+        <td>{{prov.nombre}}</td>
+        <td>{{prov.direccion}}</td>
+        <td>{{prov.telefono}}</td>
+        <td>{{prov.cuit}}</td>
+        <td><button type="button" class="btn btn-warning" (click)="modif(prov)">Modificar</button></td>
+      </tr>
+    </tbody>
+  </table>
